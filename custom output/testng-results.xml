@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-18T23:54:21 EEST" name="Saucedemo suite" finished-at="2022-08-18T23:54:53 EEST" duration-ms="32708">
+    <groups>
+      <group name="without_login">
+        <method signature="LoginTest.testLoginScenarios(java.lang.String,java.lang.String,boolean,boolean)[pri:0, instance:tests.LoginTest@1c93084c]" name="testLoginScenarios" class="tests.LoginTest"/>
+      </group> <!-- without_login -->
+      <group name="with_login">
+        <method signature="OrderTest.testAddToCart()[pri:0, instance:tests.OrderTest@3901d134]" name="testAddToCart" class="tests.OrderTest"/>
+      </group> <!-- with_login -->
+    </groups>
+    <test started-at="2022-08-18T23:54:21 EEST" name="Order test" finished-at="2022-08-18T23:54:29 EEST" duration-ms="8348">
+      <class name="tests.OrderTest">
+        <test-method is-config="true" signature="beforeMethodWithLogin()[pri:0, instance:tests.OrderTest@3901d134]" started-at="2022-08-18T23:54:21 EEST" name="beforeMethodWithLogin" finished-at="2022-08-18T23:54:28 EEST" duration-ms="7204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithLogin -->
+        <test-method signature="testAddToCart()[pri:0, instance:tests.OrderTest@3901d134]" started-at="2022-08-18T23:54:28 EEST" name="testAddToCart" description="Verify that adding elements to cart works as expected" finished-at="2022-08-18T23:54:29 EEST" duration-ms="814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.OrderTest@3901d134]" started-at="2022-08-18T23:54:29 EEST" name="afterMethod" finished-at="2022-08-18T23:54:29 EEST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.OrderTest -->
+    </test> <!-- Order test -->
+    <test started-at="2022-08-18T23:54:29 EEST" name="Login test" finished-at="2022-08-18T23:54:53 EEST" duration-ms="24339">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeMethodWithoutLogin()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:29 EEST" name="beforeMethodWithoutLogin" finished-at="2022-08-18T23:54:33 EEST" duration-ms="3482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithoutLogin -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean,boolean)[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:33 EEST" name="testLoginScenarios" description="Verify login with different users" data-provider="loginUsers" finished-at="2022-08-18T23:54:34 EEST" duration-ms="1664" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:34 EEST" name="afterMethod" finished-at="2022-08-18T23:54:34 EEST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethodWithoutLogin()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:34 EEST" name="beforeMethodWithoutLogin" finished-at="2022-08-18T23:54:38 EEST" duration-ms="3963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithoutLogin -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean,boolean)[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:38 EEST" name="testLoginScenarios" description="Verify login with different users" data-provider="loginUsers" finished-at="2022-08-18T23:54:39 EEST" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:39 EEST" name="afterMethod" finished-at="2022-08-18T23:54:39 EEST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethodWithoutLogin()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:39 EEST" name="beforeMethodWithoutLogin" finished-at="2022-08-18T23:54:42 EEST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithoutLogin -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean,boolean)[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:42 EEST" name="testLoginScenarios" description="Verify login with different users" data-provider="loginUsers" finished-at="2022-08-18T23:54:43 EEST" duration-ms="920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:43 EEST" name="afterMethod" finished-at="2022-08-18T23:54:43 EEST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethodWithoutLogin()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:43 EEST" name="beforeMethodWithoutLogin" finished-at="2022-08-18T23:54:47 EEST" duration-ms="3726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodWithoutLogin -->
+        <test-method signature="testLoginScenarios(java.lang.String,java.lang.String,boolean,boolean)[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:47 EEST" name="testLoginScenarios" description="Verify login with different users" data-provider="loginUsers" finished-at="2022-08-18T23:54:53 EEST" duration-ms="6120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginScenarios -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LoginTest@1c93084c]" started-at="2022-08-18T23:54:53 EEST" name="afterMethod" finished-at="2022-08-18T23:54:53 EEST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Login test -->
+  </suite> <!-- Saucedemo suite -->
+</testng-results>
