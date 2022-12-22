@@ -16,7 +16,6 @@ public abstract class BaseTest {
         driver = WebdriverConfig.getChromeDriver();
         driver.get("https://www.saucedemo.com/");
         loginSteps("standard_user", "secret_sauce");
-
     }
 
     @BeforeMethod(onlyForGroups = {"without_login"})

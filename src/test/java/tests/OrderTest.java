@@ -1,12 +1,9 @@
 package tests;
 
-import driver.WebdriverConfig;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.List;
-
 import static org.testng.Assert.*;
 
 public class OrderTest extends BaseTest {
@@ -18,7 +15,6 @@ public class OrderTest extends BaseTest {
         String firstItemTitle = firstItem.findElement(By.cssSelector(".inventory_item_name")).getText();
         String firstItemPriceTag = firstItem.findElement(By.cssSelector(".inventory_item_price")).getText();
         WebElement firstItemButton = firstItem.findElement(By.id("add-to-cart-sauce-labs-backpack"));
-
         assertEquals(firstItemButton.getText().toLowerCase(), "add to cart",
                 "Add to cart button is incorrect before adding an item to cart");
         assertFalse(isElementPresent(By.cssSelector("span.shopping_cart_badge")),
@@ -30,7 +26,6 @@ public class OrderTest extends BaseTest {
                 "Shopping cart is empty, no product was added");
         assertEquals(driver.findElement(By.cssSelector("span.shopping_cart_badge")).getText(), "1",
                 "Number of elements inside the shopping cart badge is incorrect");
-
         shoppingCart.click();
         assertTrue(driver.getCurrentUrl().contains("cart.html"),
                 "User is not on the cart page after navigating to it");
@@ -40,12 +35,10 @@ public class OrderTest extends BaseTest {
         assertEquals(cartItemName, firstItemTitle, "Wrong item was added to cart");
         String cartItemPrice = cartItems.get(0).findElement(By.className("inventory_item_price")).getText();
         assertEquals(cartItemPrice, firstItemPriceTag, "Wrong price");
-
         assertTrue(isElementPresent(cartItems.get(0), By.id("remove-sauce-labs-backpack")),
                 "Remove button is not present");
         assertTrue(isElementPresent(By.id("continue-shopping")),
                 "Continue shopping button is not present");
         assertTrue(isElementPresent(By.id("checkout")), "Checkout button is not present");
     }
-
 }
